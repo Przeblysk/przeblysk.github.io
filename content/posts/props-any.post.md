@@ -1,7 +1,7 @@
 ---
 title: "Parameter 'props' implicitly has an 'any' type"
 date: 2021-03-26T10:36:28+08:00
-draft: true
+draft: false
 ---
 
 1. 添加两个interface Props & State
