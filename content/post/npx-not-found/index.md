@@ -9,6 +9,9 @@ categories = [
 tags = [
     "git",
 ]
+
+image = "animal-6889575_1920.jpg"
+
 +++
 
 基本上的表现为 xx command not found
