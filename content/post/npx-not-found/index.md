@@ -8,13 +8,14 @@ categories = [
 ]
 tags = [
     "git",
+    "husky"
 ]
 
 image = "animal-6889575_1920.jpg"
 
 +++
 
-基本上的表现为 xx command not found
+基本上的表现为 xx command not found 例如 npx command not found. yarn command not found.
 
 **解决办法**
 
@@ -24,4 +25,6 @@ image = "animal-6889575_1920.jpg"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH=$HOME/.nvm/versions/node/v16.13.0/bin:$PATH # Add yarn to path
 ```
