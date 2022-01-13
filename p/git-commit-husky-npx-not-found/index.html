@@ -6,7 +6,7 @@
 <meta property="og:description" content="husky在第三方git gui中不能正确找到path路径的问题">
 <meta property="og:url" content="https://example.com/p/git-commit-husky-npx-not-found/">
 <meta property="og:site_name" content="Przeblysk">
-<meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="git"><meta property="og:image" content="https://example.com/p/git-commit-husky-npx-not-found/animal-6889575_1920.jpg">
+<meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="git"><meta property="article:tag" content="husky"><meta property="og:image" content="https://example.com/p/git-commit-husky-npx-not-found/animal-6889575_1920.jpg">
 <meta name=twitter:title content="git commit husky npx not found">
 <meta name=twitter:description content="husky在第三方git gui中不能正确找到path路径的问题"><meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://example.com/p/git-commit-husky-npx-not-found/animal-6889575_1920.jpg">
@@ -94,17 +94,20 @@ husky在第三方git gui中不能正确找到path路径的问题
 </div>
 </header>
 <section class=article-content>
-<p>基本上的表现为 xx command not found</p>
+<p>基本上的表现为 xx command not found 例如 npx command not found. yarn command not found.</p>
 <p><strong>解决办法</strong></p>
 <p>在用户根目录新建.huskyrc 将环境写入其中，例如 nvm 安装的 node 环境</p>
 <div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=nb>export</span> <span class=nv>NVM_DIR</span><span class=o>=</span><span class=s2>&#34;</span><span class=nv>$HOME</span><span class=s2>/.nvm&#34;</span>
 <span class=o>[</span> -s <span class=s2>&#34;</span><span class=nv>$NVM_DIR</span><span class=s2>/nvm.sh&#34;</span> <span class=o>]</span> <span class=o>&amp;&amp;</span> <span class=se>\.</span> <span class=s2>&#34;</span><span class=nv>$NVM_DIR</span><span class=s2>/nvm.sh&#34;</span>  <span class=c1># This loads nvm</span>
 <span class=o>[</span> -s <span class=s2>&#34;</span><span class=nv>$NVM_DIR</span><span class=s2>/bash_completion&#34;</span> <span class=o>]</span> <span class=o>&amp;&amp;</span> <span class=se>\.</span> <span class=s2>&#34;</span><span class=nv>$NVM_DIR</span><span class=s2>/bash_completion&#34;</span>  <span class=c1># This loads nvm bash_completion</span>
+
+<span class=nb>export</span> <span class=nv>PATH</span><span class=o>=</span><span class=nv>$HOME</span>/.nvm/versions/node/v16.13.0/bin:<span class=nv>$PATH</span> <span class=c1># Add yarn to path</span>
 </code></pre></div>
 </section>
 <footer class=article-footer>
 <section class=article-tags>
 <a href=/tags/git/>git</a>
+<a href=/tags/husky/>husky</a>
 </section>
 <section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
 <span>Licensed under CC BY-NC-SA 4.0</span>
