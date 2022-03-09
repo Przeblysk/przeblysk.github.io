@@ -1,26 +1,146 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Przeblysk</title><link>https://example.com/</link><description>Recent content on Przeblysk</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>git commit husky npx not found</title><link>https://example.com/p/git-commit-husky-npx-not-found/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/git-commit-husky-npx-not-found/</guid><description>&lt;img src="https://example.com/p/git-commit-husky-npx-not-found/animal-6889575_1920.jpg" alt="Featured image of post git commit husky npx not found" />&lt;p>基本上的表现为 xx command not found 例如 npx command not found. yarn command not found.&lt;/p>
 &lt;p>&lt;strong>解决办法&lt;/strong>&lt;/p>
 &lt;p>在用户根目录新建.huskyrc 将环境写入其中，例如 nvm 安装的 node 环境&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="nb">export&lt;/span> &lt;span class="nv">NVM_DIR&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$HOME&lt;/span>&lt;span class="s2">/.nvm&amp;#34;&lt;/span>
-&lt;span class="o">[&lt;/span> -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/nvm.sh&amp;#34;&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="se">\.&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/nvm.sh&amp;#34;&lt;/span> &lt;span class="c1"># This loads nvm&lt;/span>
-&lt;span class="o">[&lt;/span> -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/bash_completion&amp;#34;&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="se">\.&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/bash_completion&amp;#34;&lt;/span> &lt;span class="c1"># This loads nvm bash_completion&lt;/span>
-&lt;span class="nb">export&lt;/span> &lt;span class="nv">PATH&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nv">$HOME&lt;/span>/.nvm/versions/node/v16.13.0/bin:&lt;span class="nv">$PATH&lt;/span> &lt;span class="c1"># Add yarn to path&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unable to resolve your shell environment in a reasonable time. Please review your shell configuration.</title><link>https://example.com/p/unable-to-resolve-your-shell-environment-in-a-reasonable-time.-please-review-your-shell-configuration./</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/unable-to-resolve-your-shell-environment-in-a-reasonable-time.-please-review-your-shell-configuration./</guid><description>&lt;img src="https://example.com/p/unable-to-resolve-your-shell-environment-in-a-reasonable-time.-please-review-your-shell-configuration./winter-gbf2e41a68_1920.jpg" alt="Featured image of post Unable to resolve your shell environment in a reasonable time. Please review your shell configuration." />&lt;p>问题表现为启动vscode的时候右下角会有一个提示Unable to resolve your shell environment in a reasonable time. Please review your shell configuration.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">NVM_DIR&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$HOME&lt;/span>&lt;span class="s2">/.nvm&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/nvm.sh&amp;#34;&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="se">\.&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/nvm.sh&amp;#34;&lt;/span> &lt;span class="c1"># This loads nvm&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span> -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/bash_completion&amp;#34;&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="se">\.&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/bash_completion&amp;#34;&lt;/span> &lt;span class="c1"># This loads nvm bash_completion&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">export&lt;/span> &lt;span class="nv">PATH&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nv">$HOME&lt;/span>/.nvm/versions/node/v16.13.0/bin:&lt;span class="nv">$PATH&lt;/span> &lt;span class="c1"># Add yarn to path&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Unable to resolve your shell environment in a reasonable time. Please review your shell configuration.</title><link>https://example.com/p/unable-to-resolve-your-shell-environment-in-a-reasonable-time.-please-review-your-shell-configuration./</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/unable-to-resolve-your-shell-environment-in-a-reasonable-time.-please-review-your-shell-configuration./</guid><description>&lt;img src="https://example.com/p/unable-to-resolve-your-shell-environment-in-a-reasonable-time.-please-review-your-shell-configuration./winter-gbf2e41a68_1920.jpg" alt="Featured image of post Unable to resolve your shell environment in a reasonable time. Please review your shell configuration." />&lt;p>问题表现为启动vscode的时候右下角会有一个提示Unable to resolve your shell environment in a reasonable time. Please review your shell configuration.&lt;/p>
 &lt;p>在GitHub上有同样的issue被提出：&lt;a class="link" href="https://github.com/microsoft/vscode/issues/113869#issuecomment-780072904" target="_blank" rel="noopener"
 >&lt;code>Unable to resolve your shell environment&lt;/code> notification after VS Code restored during MacOS restart · Issue #113869 · microsoft/vscode (github.com)&lt;/a>&lt;/p>
 &lt;p>官网描述地址&lt;a class="link" href="https://code.visualstudio.com/docs/supporting/faq#_resolving-shell-environment-is-slow-error-warning" target="_blank" rel="noopener"
 >Visual Studio Code Frequently Asked Questions&lt;/a>&lt;/p>
 &lt;p>我的解决方案是在vscode中不主动加载nvm环境，我的本地配置文件是**.zshrc**，因为我是用的是ohmyzsh。&lt;/p>
 &lt;p>修改**.zshrc**配置如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="k">function&lt;/span> load_nvm&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
-&lt;span class="nb">export&lt;/span> &lt;span class="nv">NVM_DIR&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$HOME&lt;/span>&lt;span class="s2">/.nvm&amp;#34;&lt;/span>
-&lt;span class="o">[&lt;/span> -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/nvm.sh&amp;#34;&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="se">\.&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/nvm.sh&amp;#34;&lt;/span> &lt;span class="c1"># This loads nvm&lt;/span>
-&lt;span class="o">[&lt;/span> -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/bash_completion&amp;#34;&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="se">\.&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/bash_completion&amp;#34;&lt;/span> &lt;span class="c1"># This loads nvm bash_completion&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;span class="c1"># nvm&lt;/span>
-&lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="s2">&amp;#34;x&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">TERM_PROGRAM&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;xvscode&amp;#34;&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
-&lt;span class="nb">echo&lt;/span> &lt;span class="s1">&amp;#39;in vscode, nvm not work; use `load-nvm`&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;span class="k">else&lt;/span>
-load_nvm
-&lt;span class="k">fi&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>这样就解决啦 :)&lt;/p></description></item></channel></rss>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">&lt;span class="k">function&lt;/span> load_nvm&lt;span class="o">()&lt;/span> &lt;span class="o">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">export&lt;/span> &lt;span class="nv">NVM_DIR&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$HOME&lt;/span>&lt;span class="s2">/.nvm&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">[&lt;/span> -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/nvm.sh&amp;#34;&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="se">\.&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/nvm.sh&amp;#34;&lt;/span> &lt;span class="c1"># This loads nvm&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="o">[&lt;/span> -s &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/bash_completion&amp;#34;&lt;/span> &lt;span class="o">]&lt;/span> &lt;span class="o">&amp;amp;&amp;amp;&lt;/span> &lt;span class="se">\.&lt;/span> &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="nv">$NVM_DIR&lt;/span>&lt;span class="s2">/bash_completion&amp;#34;&lt;/span> &lt;span class="c1"># This loads nvm bash_completion&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># nvm&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="o">[[&lt;/span> &lt;span class="s2">&amp;#34;x&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nv">TERM_PROGRAM&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;xvscode&amp;#34;&lt;/span> &lt;span class="o">]]&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="k">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">echo&lt;/span> &lt;span class="s1">&amp;#39;in vscode, nvm not work; use `load-nvm`&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> load_nvm
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这样就解决啦 :)&lt;/p></description></item><item><title>在Taro中使用Lottie</title><link>https://example.com/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/</guid><description>&lt;img src="https://example.com/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/pexels-tobi-620337.jpg" alt="Featured image of post 在Taro中使用Lottie" />&lt;h1 id="在-taro-中使用-lottie">在 Taro 中使用 Lottie&lt;/h1>
+&lt;h2 id="选择">选择&lt;/h2>
+&lt;p>目前小程序的 Lottie 插件有两个：&lt;/p>
+&lt;ol>
+&lt;li>&lt;a class="link" href="https://github.com/wechat-miniprogram/lottie-miniprogram" target="_blank" rel="noopener"
+>wechat-miniprogram/lottie-miniprogram: lottie for miniprogram (github.com)&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://github.com/landn172/lottie-miniapp" target="_blank" rel="noopener"
+>landn172/lottie-miniapp: lottie mniapp 小程序 (github.com)&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;p>一个是微信官方维护的小程序 Lottie 插件，另一个是比官方更早出的社区版本。&lt;/p>
+&lt;p>两个版本都有用户在使用，相比之下官方的库最近的更新时间更加新一些，因为都是对官方 LottieWeb 库的改造和依赖，所以大体上不会有太大的区别，任选其一都可以。&lt;/p>
+&lt;h2 id="在-taro-项目中安装">在 Taro 项目中安装&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">// 使用yarn或者npm安装node包
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">yarn add lottie-miniprogram
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm install lottie-miniprogram
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="在页面中使用">在页面中使用&lt;/h2>
+&lt;h4 id="引入-lottie">引入 lottie&lt;/h4>
+&lt;p>首先我么需要在页面中引入我们的 Lottie 库&lt;/p>
+&lt;p>&lt;code>import lottie from 'lottie-miniprogram'&lt;/code>&lt;/p>
+&lt;h4 id="创建-canvas-容器">创建 canvas 容器&lt;/h4>
+&lt;p>目前小程序只支持以 canvas 的方式去渲染 Lottie，所以我们需要初始化一个 canvas 容器给 Lottie 使用。&lt;/p>
+&lt;p>微信小程序对 canvas 有更新，目前有新旧两种方式使用 canvas 组件。&lt;/p>
+&lt;p>从基础库 2.9.0 起支持一套新 Canvas 2D 接口（需指定 type 属性），同时支持&lt;a class="link" href="https://developers.weixin.qq.com/miniprogram/dev/component/native-component.html#%e5%8e%9f%e7%94%9f%e7%bb%84%e4%bb%b6%e5%90%8c%e5%b1%82%e6%b8%b2%e6%9f%93" target="_blank" rel="noopener"
+>同层渲染&lt;/a>。所有我们的示例会使用新的方式来使用。&lt;/p>
+&lt;p>我们在页面上定义一个 canvas，代码如下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">Canvas&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">id&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#39;canvas&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">type&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#39;2d&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span> &lt;span class="nx">width&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;100%&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;375px&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">opacity&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们定义了一个&lt;code>type&lt;/code>为 2d、&lt;code>id&lt;/code> 为 canvas 的 canvas。这个容器之后会给 Lottie 使用。&lt;/p>
+&lt;h4 id="初始化-lottie">初始化 Lottie&lt;/h4>
+&lt;p>现在我们已经有了一个 Canvas 容器，接下来我们需要在页面中初始化 Lottie，具体的代码如下：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">React&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">useEffect&lt;/span>&lt;span class="p">(()&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Taro&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">nextTick&lt;/span>&lt;span class="p">(()&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">Taro&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">createSelectorQuery&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">select&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;#canvas&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">node&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">res&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">any&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">canvas&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">node&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">const&lt;/span> &lt;span class="nx">context&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">canvas&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getContext&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;2d&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nx">pixelRatio&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">2&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pixelRatio&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">sysInfo&lt;/span>&lt;span class="o">?&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">pixelRatio&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="nx">pixelRatio&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">context&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">scale&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">pixelRatio&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">pixelRatio&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">canvas&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">width&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">canvas&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">_width&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">pixelRatio&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">canvas&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">canvas&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">_height&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="nx">pixelRatio&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">lottie&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">setup&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">canvas&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">lottieRef&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">current&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">lottie&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">loadAnimation&lt;/span>&lt;span class="p">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">loop&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">autoplay&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">path&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;https://assets7.lottiefiles.com/private_files/lf30_blzqtgs6.json&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">rendererSettings&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">context&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">lottieRef&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">current&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">goToAndStop&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">40&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">exec&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">},&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">sysInfo&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们在 useEffect 中使用 &lt;code>Taro.createSelectorQuery()&lt;/code> 根据之前定义的 id 来获取到 canvas。&lt;/p>
+&lt;p>然后使用了 &lt;code>canvas.getContext('2d')&lt;/code> 来获取 canvas 的上下文。&lt;/p>
+&lt;p>接着我们使用了系统信息去对 canvas 进行了缩放。&lt;/p>
+&lt;p>然后有一行很重要的代码：&lt;code>lottie.setup(canvas)&lt;/code> 这一步很重要，我们在调用 Lottie 的接口之前，一定要把 canvas 传入。&lt;/p>
+&lt;p>接下来我们调用了 Lottie 的一个方法 &lt;code>loadAnimation&lt;/code> 。它接受一个类型为 &lt;code>LoadAnimationParameter&lt;/code> 的参数。具体的属性如下：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-typescript" data-lang="typescript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">interface&lt;/span> &lt;span class="nx">LoadAnimationParameter&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">renderer&lt;/span>&lt;span class="o">?:&lt;/span> &lt;span class="s1">&amp;#39;canvas&amp;#39;&lt;/span> &lt;span class="c1">// 默认使用canvas渲染，官方没有把该属性放出
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">loop?&lt;/span>: &lt;span class="kt">boolean&lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="kt">number&lt;/span> &lt;span class="c1">// 是否重复播放
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">autoplay?&lt;/span>: &lt;span class="kt">boolean&lt;/span> &lt;span class="c1">// 是否自动播放
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">name?&lt;/span>: &lt;span class="kt">string&lt;/span> &lt;span class="c1">// 名称只供参考而已
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">rendererSettings?&lt;/span>: &lt;span class="kt">CanvasRendererConfig&lt;/span> &lt;span class="c1">// 用来接受canvas上下文
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">animationData?&lt;/span>: &lt;span class="kt">any&lt;/span> &lt;span class="c1">// 动画数据
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">path?&lt;/span>: &lt;span class="kt">string&lt;/span> &lt;span class="c1">// 动画地址
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在我们代码中，我们设置了 loop、autoplay、path 以及 rendererSettings。&lt;/p>
+&lt;p>接下来我们又马上调用了 Lottie 的一个方法 &lt;code>goToAndStop&lt;/code> ，从字面上就很好理解，这个方法就是将动画暂停在我们设置的那个时间点。它接受了 2 个参数，第一个参数是要停止的位置，第二个参数是第一个参数的单位是否是帧。因为我们的 Lottie 动画其实是帧动画，所以这个帧应该也不难理解。&lt;/p>
+&lt;h4 id="lottie-中的方法">Lottie 中的方法&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-typescript" data-lang="typescript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">interface&lt;/span> &lt;span class="nx">LoadAnimationReturnType&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">play&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">stop&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pause&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">setSpeed&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">speed&lt;/span>: &lt;span class="kt">number&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">goToAndPlay&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">value&lt;/span>: &lt;span class="kt">number&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">isFrame?&lt;/span>: &lt;span class="kt">boolean&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">goToAndStop&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">value&lt;/span>: &lt;span class="kt">number&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">isFrame?&lt;/span>: &lt;span class="kt">boolean&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">setDirection&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">direction&lt;/span>: &lt;span class="kt">AnimationDirection&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">playSegments&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">segments&lt;/span>: &lt;span class="kt">AnimationSegment&lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="nx">AnimationSegment&lt;/span>&lt;span class="p">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">forceFlag?&lt;/span>: &lt;span class="kt">boolean&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">setSubframe&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">useSubFrames&lt;/span>: &lt;span class="kt">boolean&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">destroy&lt;/span>&lt;span class="p">()&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">getDuration&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">inFrames?&lt;/span>: &lt;span class="kt">boolean&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kt">number&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">triggerEvent&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">T&lt;/span> &lt;span class="err">=&lt;/span> &lt;span class="na">any&lt;/span>&lt;span class="p">&amp;gt;(&lt;/span>&lt;span class="nx">name&lt;/span>: &lt;span class="kt">AnimationEventName&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">args&lt;/span>: &lt;span class="kt">T&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">addEventListener&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">T&lt;/span> &lt;span class="err">=&lt;/span> &lt;span class="na">any&lt;/span>&lt;span class="p">&amp;gt;(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span>: &lt;span class="kt">AnimationEventName&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">callback&lt;/span>: &lt;span class="kt">AnimationEventCallback&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">T&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">removeEventListener&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">T&lt;/span> &lt;span class="err">=&lt;/span> &lt;span class="na">any&lt;/span>&lt;span class="p">&amp;gt;(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span>: &lt;span class="kt">AnimationEventName&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">callback&lt;/span>: &lt;span class="kt">AnimationEventCallback&lt;/span>&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">T&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">void&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在 lottie-miniprogram 的类型定义文件中一共有以上这些方法。&lt;/p>
+&lt;ol>
+&lt;li>play 播放&lt;/li>
+&lt;li>stop 停止&lt;/li>
+&lt;li>pause 暂停&lt;/li>
+&lt;li>setSpeed 设置倍数&lt;/li>
+&lt;li>goToAndPlay 跳到某处播放&lt;/li>
+&lt;li>goToAndStop 跳到某处暂停&lt;/li>
+&lt;li>setDirection 设置方向&lt;/li>
+&lt;li>playSegments 播放指定片段&lt;/li>
+&lt;li>setSubframe 是否使用原生 AE FPS&lt;/li>
+&lt;li>destroy 销毁实例&lt;/li>
+&lt;li>getDuration 获取时长&lt;/li>
+&lt;/ol>
+&lt;h4 id="为所欲为">为所欲为&lt;/h4>
+&lt;p>初始化完 Lottie 后，我们就可以使用 Lottie 中的方法对 Lottie 动画为所欲为啦。&lt;/p></description></item></channel></rss>

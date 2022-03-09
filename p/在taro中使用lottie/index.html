@@ -1,0 +1,164 @@
+<!doctype html><html lang=en-us>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="在Taro中使用Lottie"><title>在Taro中使用Lottie</title><link rel=canonical href=https://example.com/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/>
+<link rel=stylesheet href=/scss/style.min.775dbd4fd34fda61c5273b4bc3415f7c9666414fb6c40aab164a7ded4397da98.css><meta property="og:title" content="在Taro中使用Lottie">
+<meta property="og:description" content="在Taro中使用Lottie">
+<meta property="og:url" content="https://example.com/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/">
+<meta property="og:site_name" content="Przeblysk">
+<meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="taro"><meta property="article:tag" content="lottie"><meta property="og:image" content="https://example.com/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/pexels-tobi-620337.jpg">
+<meta name=twitter:title content="在Taro中使用Lottie">
+<meta name=twitter:description content="在Taro中使用Lottie"><meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://example.com/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/pexels-tobi-620337.jpg">
+</head><body class="article-page has-toc">
+<script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script>
+<div class="container main-container flex
+extended">
+<div id=article-toolbar>
+<a href=/ class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg>
+<span>返回</span>
+</a>
+</div><main class="main full-width">
+<article class="has-image main-article">
+<header class=article-header>
+<div class=article-image>
+<a href=/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/>
+<img src=/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/pexels-tobi-620337_hu3d03a01dcc18bc5be0e67db3d8d209a6_870648_800x0_resize_q75_box.jpg srcset="/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/pexels-tobi-620337_hu3d03a01dcc18bc5be0e67db3d8d209a6_870648_800x0_resize_q75_box.jpg 800w, /p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/pexels-tobi-620337_hu3d03a01dcc18bc5be0e67db3d8d209a6_870648_1600x0_resize_q75_box.jpg 1600w" width=800 height=533 loading=lazy alt="Featured image of post 在Taro中使用Lottie">
+</a>
+</div><div class=article-details>
+<header class=article-category>
+<a href=/categories/taro/>
+Taro
+</a>
+</header><h2 class=article-title>
+<a href=/p/%E5%9C%A8taro%E4%B8%AD%E4%BD%BF%E7%94%A8lottie/>在Taro中使用Lottie</a>
+</h2><h3 class=article-subtitle>
+在Taro中使用Lottie
+</h3><footer class=article-time>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>
+阅读时长: 3 分钟
+</time>
+</div></footer></div></header><section class=article-content>
+<h1 id=在-taro-中使用-lottie>在 Taro 中使用 Lottie</h1><h2 id=选择>选择</h2><p>目前小程序的 Lottie 插件有两个：</p><ol>
+<li><a class=link href=https://github.com/wechat-miniprogram/lottie-miniprogram target=_blank rel=noopener>wechat-miniprogram/lottie-miniprogram: lottie for miniprogram (github.com)</a></li><li><a class=link href=https://github.com/landn172/lottie-miniapp target=_blank rel=noopener>landn172/lottie-miniapp: lottie mniapp 小程序 (github.com)</a></li></ol><p>一个是微信官方维护的小程序 Lottie 插件，另一个是比官方更早出的社区版本。</p><p>两个版本都有用户在使用，相比之下官方的库最近的更新时间更加新一些，因为都是对官方 LottieWeb 库的改造和依赖，所以大体上不会有太大的区别，任选其一都可以。</p><h2 id=在-taro-项目中安装>在 Taro 项目中安装</h2><div class=highlight><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>// 使用yarn或者npm安装node包
+</span></span><span class=line><span class=cl>yarn add lottie-miniprogram
+</span></span><span class=line><span class=cl>npm install lottie-miniprogram
+</span></span></code></pre></div><h2 id=在页面中使用>在页面中使用</h2><h4 id=引入-lottie>引入 lottie</h4><p>首先我么需要在页面中引入我们的 Lottie 库</p><p><code>import lottie from 'lottie-miniprogram'</code></p><h4 id=创建-canvas-容器>创建 canvas 容器</h4><p>目前小程序只支持以 canvas 的方式去渲染 Lottie，所以我们需要初始化一个 canvas 容器给 Lottie 使用。</p><p>微信小程序对 canvas 有更新，目前有新旧两种方式使用 canvas 组件。</p><p>从基础库 2.9.0 起支持一套新 Canvas 2D 接口（需指定 type 属性），同时支持<a class=link href=https://developers.weixin.qq.com/miniprogram/dev/component/native-component.html#%e5%8e%9f%e7%94%9f%e7%bb%84%e4%bb%b6%e5%90%8c%e5%b1%82%e6%b8%b2%e6%9f%93 target=_blank rel=noopener>同层渲染</a>。所有我们的示例会使用新的方式来使用。</p><p>我们在页面上定义一个 canvas，代码如下</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=p>&lt;</span><span class=nt>Canvas</span>
+</span></span><span class=line><span class=cl>  <span class=na>id</span><span class=o>=</span><span class=s>&#39;canvas&#39;</span>
+</span></span><span class=line><span class=cl>  <span class=na>type</span><span class=o>=</span><span class=s>&#39;2d&#39;</span>
+</span></span><span class=line><span class=cl>  <span class=na>style</span><span class=o>=</span><span class=p>{{</span> <span class=nx>width</span><span class=o>:</span> <span class=s1>&#39;100%&#39;</span><span class=p>,</span> <span class=nx>height</span><span class=o>:</span> <span class=s1>&#39;375px&#39;</span><span class=p>,</span> <span class=nx>opacity</span><span class=o>:</span> <span class=mi>0</span> <span class=p>}}</span>
+</span></span><span class=line><span class=cl><span class=p>/&gt;</span>
+</span></span></code></pre></div><p>我们定义了一个<code>type</code>为 2d、<code>id</code> 为 canvas 的 canvas。这个容器之后会给 Lottie 使用。</p><h4 id=初始化-lottie>初始化 Lottie</h4><p>现在我们已经有了一个 Canvas 容器，接下来我们需要在页面中初始化 Lottie，具体的代码如下：</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-jsx data-lang=jsx><span class=line><span class=cl><span class=nx>React</span><span class=p>.</span><span class=nx>useEffect</span><span class=p>(()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Taro</span><span class=p>.</span><span class=nx>nextTick</span><span class=p>(()</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>Taro</span><span class=p>.</span><span class=nx>createSelectorQuery</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=nx>select</span><span class=p>(</span><span class=s1>&#39;#canvas&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=nx>node</span><span class=p>((</span><span class=nx>res</span><span class=o>:</span> <span class=nx>any</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>if</span> <span class=p>(</span><span class=nx>res</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>          <span class=kr>const</span> <span class=nx>canvas</span> <span class=o>=</span> <span class=nx>res</span><span class=p>.</span><span class=nx>node</span>
+</span></span><span class=line><span class=cl>          <span class=kr>const</span> <span class=nx>context</span> <span class=o>=</span> <span class=nx>canvas</span><span class=p>.</span><span class=nx>getContext</span><span class=p>(</span><span class=s1>&#39;2d&#39;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>          <span class=kd>let</span> <span class=nx>pixelRatio</span> <span class=o>=</span> <span class=mi>2</span>
+</span></span><span class=line><span class=cl>          <span class=nx>pixelRatio</span> <span class=o>=</span> <span class=nx>sysInfo</span><span class=o>?</span><span class=p>.</span><span class=nx>pixelRatio</span> <span class=o>||</span> <span class=nx>pixelRatio</span>
+</span></span><span class=line><span class=cl>          <span class=nx>context</span><span class=p>.</span><span class=nx>scale</span><span class=p>(</span><span class=nx>pixelRatio</span><span class=p>,</span> <span class=nx>pixelRatio</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>          <span class=nx>canvas</span><span class=p>.</span><span class=nx>width</span> <span class=o>=</span> <span class=nx>canvas</span><span class=p>.</span><span class=nx>_width</span> <span class=o>*</span> <span class=nx>pixelRatio</span>
+</span></span><span class=line><span class=cl>          <span class=nx>canvas</span><span class=p>.</span><span class=nx>height</span> <span class=o>=</span> <span class=nx>canvas</span><span class=p>.</span><span class=nx>_height</span> <span class=o>*</span> <span class=nx>pixelRatio</span>
+</span></span><span class=line><span class=cl>          <span class=nx>lottie</span><span class=p>.</span><span class=nx>setup</span><span class=p>(</span><span class=nx>canvas</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>          <span class=nx>lottieRef</span><span class=p>.</span><span class=nx>current</span> <span class=o>=</span> <span class=nx>lottie</span><span class=p>.</span><span class=nx>loadAnimation</span><span class=p>({</span>
+</span></span><span class=line><span class=cl>            <span class=nx>loop</span><span class=o>:</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>            <span class=nx>autoplay</span><span class=o>:</span> <span class=kc>false</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>            <span class=nx>path</span><span class=o>:</span> <span class=s1>&#39;https://assets7.lottiefiles.com/private_files/lf30_blzqtgs6.json&#39;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>            <span class=nx>rendererSettings</span><span class=o>:</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>              <span class=nx>context</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>            <span class=p>},</span>
+</span></span><span class=line><span class=cl>          <span class=p>})</span>
+</span></span><span class=line><span class=cl>          <span class=nx>lottieRef</span><span class=p>.</span><span class=nx>current</span><span class=p>.</span><span class=nx>goToAndStop</span><span class=p>(</span><span class=mi>40</span><span class=p>,</span> <span class=kc>true</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=p>}</span>
+</span></span><span class=line><span class=cl>      <span class=p>})</span>
+</span></span><span class=line><span class=cl>      <span class=p>.</span><span class=nx>exec</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>  <span class=p>})</span>
+</span></span><span class=line><span class=cl><span class=p>},</span> <span class=p>[</span><span class=nx>sysInfo</span><span class=p>])</span>
+</span></span></code></pre></div><p>我们在 useEffect 中使用 <code>Taro.createSelectorQuery()</code> 根据之前定义的 id 来获取到 canvas。</p><p>然后使用了 <code>canvas.getContext('2d')</code> 来获取 canvas 的上下文。</p><p>接着我们使用了系统信息去对 canvas 进行了缩放。</p><p>然后有一行很重要的代码：<code>lottie.setup(canvas)</code> 这一步很重要，我们在调用 Lottie 的接口之前，一定要把 canvas 传入。</p><p>接下来我们调用了 Lottie 的一个方法 <code>loadAnimation</code> 。它接受一个类型为 <code>LoadAnimationParameter</code> 的参数。具体的属性如下：</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>interface</span> <span class=nx>LoadAnimationParameter</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>renderer</span><span class=o>?:</span> <span class=s1>&#39;canvas&#39;</span> <span class=c1>// 默认使用canvas渲染，官方没有把该属性放出
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>loop?</span>: <span class=kt>boolean</span> <span class=o>|</span> <span class=kt>number</span> <span class=c1>// 是否重复播放
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>autoplay?</span>: <span class=kt>boolean</span> <span class=c1>// 是否自动播放
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>name?</span>: <span class=kt>string</span> <span class=c1>// 名称只供参考而已
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>rendererSettings?</span>: <span class=kt>CanvasRendererConfig</span> <span class=c1>// 用来接受canvas上下文
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>animationData?</span>: <span class=kt>any</span> <span class=c1>// 动画数据
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>path?</span>: <span class=kt>string</span> <span class=c1>// 动画地址
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span></code></pre></div><p>在我们代码中，我们设置了 loop、autoplay、path 以及 rendererSettings。</p><p>接下来我们又马上调用了 Lottie 的一个方法 <code>goToAndStop</code> ，从字面上就很好理解，这个方法就是将动画暂停在我们设置的那个时间点。它接受了 2 个参数，第一个参数是要停止的位置，第二个参数是第一个参数的单位是否是帧。因为我们的 Lottie 动画其实是帧动画，所以这个帧应该也不难理解。</p><h4 id=lottie-中的方法>Lottie 中的方法</h4><div class=highlight><pre tabindex=0 class=chroma><code class=language-typescript data-lang=typescript><span class=line><span class=cl><span class=kr>interface</span> <span class=nx>LoadAnimationReturnType</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>play</span><span class=p>()</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>stop</span><span class=p>()</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>pause</span><span class=p>()</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>setSpeed</span><span class=p>(</span><span class=nx>speed</span>: <span class=kt>number</span><span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>goToAndPlay</span><span class=p>(</span><span class=nx>value</span>: <span class=kt>number</span><span class=p>,</span> <span class=nx>isFrame?</span>: <span class=kt>boolean</span><span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>goToAndStop</span><span class=p>(</span><span class=nx>value</span>: <span class=kt>number</span><span class=p>,</span> <span class=nx>isFrame?</span>: <span class=kt>boolean</span><span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>setDirection</span><span class=p>(</span><span class=nx>direction</span>: <span class=kt>AnimationDirection</span><span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>playSegments</span><span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=nx>segments</span>: <span class=kt>AnimationSegment</span> <span class=o>|</span> <span class=nx>AnimationSegment</span><span class=p>[],</span>
+</span></span><span class=line><span class=cl>    <span class=nx>forceFlag?</span>: <span class=kt>boolean</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>setSubframe</span><span class=p>(</span><span class=nx>useSubFrames</span>: <span class=kt>boolean</span><span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>destroy</span><span class=p>()</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>getDuration</span><span class=p>(</span><span class=nx>inFrames?</span>: <span class=kt>boolean</span><span class=p>)</span><span class=o>:</span> <span class=kt>number</span>
+</span></span><span class=line><span class=cl>  <span class=nx>triggerEvent</span><span class=p>&lt;</span><span class=nt>T</span> <span class=err>=</span> <span class=na>any</span><span class=p>&gt;(</span><span class=nx>name</span>: <span class=kt>AnimationEventName</span><span class=p>,</span> <span class=nx>args</span>: <span class=kt>T</span><span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>addEventListener</span><span class=p>&lt;</span><span class=nt>T</span> <span class=err>=</span> <span class=na>any</span><span class=p>&gt;(</span>
+</span></span><span class=line><span class=cl>    <span class=nx>name</span>: <span class=kt>AnimationEventName</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>callback</span>: <span class=kt>AnimationEventCallback</span><span class=p>&lt;</span><span class=nt>T</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl>  <span class=nx>removeEventListener</span><span class=p>&lt;</span><span class=nt>T</span> <span class=err>=</span> <span class=na>any</span><span class=p>&gt;(</span>
+</span></span><span class=line><span class=cl>    <span class=nx>name</span>: <span class=kt>AnimationEventName</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=nx>callback</span>: <span class=kt>AnimationEventCallback</span><span class=p>&lt;</span><span class=nt>T</span><span class=p>&gt;</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span><span class=o>:</span> <span class=k>void</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>在 lottie-miniprogram 的类型定义文件中一共有以上这些方法。</p><ol>
+<li>play 播放</li><li>stop 停止</li><li>pause 暂停</li><li>setSpeed 设置倍数</li><li>goToAndPlay 跳到某处播放</li><li>goToAndStop 跳到某处暂停</li><li>setDirection 设置方向</li><li>playSegments 播放指定片段</li><li>setSubframe 是否使用原生 AE FPS</li><li>destroy 销毁实例</li><li>getDuration 获取时长</li></ol><h4 id=为所欲为>为所欲为</h4><p>初始化完 Lottie 后，我们就可以使用 Lottie 中的方法对 Lottie 动画为所欲为啦。</p></section><footer class=article-footer>
+<section class=article-tags>
+<a href=/tags/taro/>taro</a>
+<a href=/tags/lottie/>lottie</a>
+</section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg>
+<span>Licensed under CC BY-NC-SA 4.0</span>
+</section></footer></article><aside class=related-contents--wrapper>
+</aside><div class=disqus-container>
+<div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//hugo-theme-stack.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div><style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style><script>window.addEventListener("onColorSchemeChange",e=>{DISQUS&&DISQUS.reset({reload:!0})})</script>
+<footer class=site-footer>
+<section class=copyright>
+&copy;
+2020 -
+2022 Przeblysk
+</section><section class=powerby>
+Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> <br>
+Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.6.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a>
+</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true>
+<div class=pswp__bg></div><div class=pswp__scroll-wrap>
+<div class=pswp__container>
+<div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden">
+<div class=pswp__top-bar>
+<div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class=pswp__preloader>
+<div class=pswp__preloader__icn>
+<div class=pswp__preloader__cut>
+<div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class=pswp__caption>
+<div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin=anonymous>
+</main><aside class="sidebar right-sidebar sticky">
+<section class="widget archives">
+<div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg>
+</div><h2 class="widget-title section-title">目录</h2><div class=widget--toc>
+<nav id=TableOfContents>
+<ol>
+<li><a href=#选择>选择</a></li><li><a href=#在-taro-项目中安装>在 Taro 项目中安装</a></li><li><a href=#在页面中使用>在页面中使用</a>
+<ol>
+<li>
+<ol>
+<li><a href=#引入-lottie>引入 lottie</a></li><li><a href=#创建-canvas-容器>创建 canvas 容器</a></li><li><a href=#初始化-lottie>初始化 Lottie</a></li><li><a href=#lottie-中的方法>Lottie 中的方法</a></li><li><a href=#为所欲为>为所欲为</a></li></ol></li></ol></li></ol></nav></div></section></aside></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script>
+</body></html>
